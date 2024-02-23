@@ -12,8 +12,7 @@ Segue abaixo como configurar para que o programinha em python funcione !
 3° Crie um atalho para o arquivo exec_program.bat para que seja possivel alterar a tecla de atalho para que nosso programinha em python execute automáticamente : 
 
 ![Uploading image.png…]()
- # lembrando é preciso deixar o arquivo original exec_program.bat dentro da pasta aonde contém o codigo python e somente o atalho do arquivo .bat que você pode escolher um local pra ele ( de preferencia deixe na
- sua area de trabalho )
+ # lembrando é preciso deixar o arquivo original exec_program.bat dentro da pasta aonde contém o codigo python e somente o atalho do arquivo .bat que você pode escolher um local pra ele ( de preferencia deixe ns sua area de trabalho )
 
 
 Pronto agora você ja vai conseguir utilizar o programa ! 
