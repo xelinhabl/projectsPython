@@ -27,11 +27,11 @@ directory_img = ("C:\\Users\\alex.lopes\\projectsPython\\prints\\%s.png" % nameP
 # Verifica se o print foi salvo dentro da pasta
 salve_done = False
 if os.path.exists(local_prints + "%s.png" % namePrint):
-    salve_done = True 
+    save_done = True 
     print('Arquivo salvo com sucesso ! ')
 
 # Deixa o print na area de transferencia para copiar para qualquer lugar 
-if salve_done:
+if save_done:
     def send_to_clipboard(clip_type, data):
         win32clipboard.OpenClipboard()
         win32clipboard.EmptyClipboard()
