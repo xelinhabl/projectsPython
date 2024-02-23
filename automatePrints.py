@@ -1,6 +1,8 @@
 import pyautogui
-import time
 import os
+from io import BytesIO
+import win32clipboard
+from PIL import Image
 
 
 # Seta pasta para salvar os print's pasta destino
@@ -20,11 +22,28 @@ else:
 # Realiza o print da tela 
 img1 = pyautogui.screenshot() 
 img1.save(r"C:\Users\alex.lopes\projectsPython\prints\%s.png" % namePrint)
+directory_img = ("C:\\Users\\alex.lopes\\projectsPython\\prints\\%s.png" % namePrint)
 
 # Verifica se o print foi salvo dentro da pasta
 salve_done = False
 if os.path.exists(local_prints + "%s.png" % namePrint):
     salve_done = True 
     print('Arquivo salvo com sucesso ! ')
+
+# Deixa o print na area de transferencia para copiar para qualquer lugar 
+if salve_done:
+    def send_to_clipboard(clip_type, data):
+        win32clipboard.OpenClipboard()
+        win32clipboard.EmptyClipboard()
+        win32clipboard.SetClipboardData(clip_type, data)
+        win32clipboard.CloseClipboard()
+    
+filepath = 'C:\\Users\\alex.lopes\\projectsPython\\prints\\%s.png' % namePrint 
+image = Image.open(filepath)
+output = BytesIO()
+image.convert("RGB").save(output, "BMP")
+data = output.getvalue()[14:]
+output.close()
+send_to_clipboard(win32clipboard.CF_DIB, data)
 
 
