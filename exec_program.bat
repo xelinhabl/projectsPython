@@ -1,0 +1,2 @@
+@echo
+py automatePrints.py
