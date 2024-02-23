@@ -18,13 +18,8 @@ else:
     namePrint = 'screenshot%s' % qnt_local_arq
 
 # Realiza o print da tela 
-img1 = pyautogui.screenshot()
+img1 = pyautogui.screenshot() 
 img1.save(r"C:\Users\alex.lopes\projectsPython\prints\%s.png" % namePrint)
-
-img1 = pyautogui.locateCenterOnScreen(r"C:\Users\alex.lopes\projectsPython\prints\%s.png" % namePrint)
-print (img1)
-
-pyautogui.hotkey('ctrl', 'c')
 
 # Verifica se o print foi salvo dentro da pasta
 salve_done = False
