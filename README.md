@@ -5,11 +5,15 @@ Segue abaixo como configurar para que o programinha em python funcione !
 
 1° Tenha o python instalado na maquina, caso ainda não tenha segue o link para download : https://www.python.org/downloads/
 
-2° Abra o arquivo automatePrints.py com seu editor de texto e altere o caminho da pasta aonde você quer que os print's fiquem salvos : 
+2° Depois de instalado o Python na maquina abra o cmd e execute o comando dentro da pasta do projeto projectsPython ---> pip install -r requirements. txt como na imagem abaixo : 
+
+![image](https://github.com/xelinhabl/projectsPython/assets/153821222/1ba371c3-4777-4939-a158-5a9311048b97)
+
+3° Abra o arquivo automatePrints.py com seu editor de texto e altere o caminho da pasta aonde você quer que os print's fiquem salvos : 
 
 ![image](https://github.com/xelinhabl/projectsPython/assets/153821222/f0025539-cde0-49d7-a83e-b000e8a880b0)
 
-3° Crie um atalho para o arquivo exec_program.bat para que seja possivel alterar a tecla de atalho para que nosso programinha em python execute automáticamente : 
+4° Crie um atalho para o arquivo exec_program.bat para que seja possivel alterar a tecla de atalho para que nosso programinha em python execute automáticamente : 
 
 ![image](https://github.com/xelinhabl/projectsPython/assets/153821222/86592f09-5eeb-48d6-8543-1693b2e6f328)
 
